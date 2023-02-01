@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!-- <script src="./script.js"></script> -->
+  </head>
+  <body ng-app="myapp">
+    <div ng-controller="handleEventController">
+      <table>
+        <tr>
+          <td>Name</td>
+          <td>Likes</td>
+          <td>Dislikes</td>
+          <td>Minus</td>
+          <td>Actions</td>
+        </tr>
+        <tr ng-repeat="technology in technologies">
+          <td>{{technology.Name}}</td>
+          <td>{{technology.Likes}}</td>
+          <td>{{technology.Dislikes}}</td>
+          <td>{{technology.Minus}}</td>
+          <td>
+            <button ng-click="increaseLike(technology)">Like</button>
+            <button ng-click="increaseDislike(technology)">Dislike</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script>
+      function handleEventController($scope) {
+        var technologies = [
+          { Name: "C#", Likes: 0, Minus: 0, Dislikes: 0 },
+          { Name: "ASP.NET", Likes: 0, Minus: 0, Dislikes: 0 },
+          { Name: "SQL Server", Likes: 0, Minus: 0, Dislikes: 0 },
+          { Name: "AngularJS", Likes: 0, Minus: 0, Dislikes: 0 },
+        ];
+        $scope.technologies = technologies;
+        $scope.increaseLike = function (technology) {
+          technology.Likes++;
+          technology.Minus = technology.Likes - technology.Dislikes;
+        };
+        $scope.increaseDislike = function (technology) {
+          technology.Dislikes++;
+          technology.Minus = technology.Likes - technology.Dislikes;
+        };
+      }
+      var app = angular.module("myapp", []);
+      app.controller("handleEventController", handleEventController);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+{
+  "student": [
+    {
+      "mssv": "mssv 1",
+      "name": "name 1",
+      "age": 33,
+      "address": "address 1",
+      "mark": 0,
+      "id": "1"
+    },
+    {
+      "mssv": "mssv 2",
+      "name": "name 2",
+      "age": 13,
+      "address": "address 2",
+      "mark": 45,
+      "id": "2"
+    },
+    {
+      "mssv": "mssv 3",
+      "name": "name 3",
+      "age": 51,
+      "address": "address 3",
+      "mark": 44,
+      "id": "3"
+    },
+    {
+      "mssv": "mssv 4",
+      "name": "name 4",
+      "age": 78,
+      "address": "address 4",
+      "mark": 60,
+      "id": "4"
+    },
+    {
+      "mssv": "mssv 5",
+      "name": "name 5",
+      "age": 46,
+      "address": "address 5",
+      "mark": 25,
+      "id": "5"
+    },
+    {
+      "mssv": "mssv 6",
+      "name": "name 6",
+      "age": 58,
+      "address": "address 6",
+      "mark": 55,
+      "id": "6"
+    },
+    {
+      "mssv": "mssv 7",
+      "name": "name 7",
+      "age": 40,
+      "address": "address 7",
+      "mark": 25,
+      "id": "7"
+    },
+    {
+      "mssv": "mssv 8",
+      "name": "name 8",
+      "age": 12,
+      "address": "address 8",
+      "mark": 29,
+      "id": "8"
+    },
+    {
+      "mssv": "mssv 9",
+      "name": "name 9",
+      "age": 39,
+      "address": "address 9",
+      "mark": 7,
+      "id": "9"
+    },
+    {
+      "mssv": "mssv 10",
+      "name": "name 10",
+      "age": 28,
+      "address": "address 10",
+      "mark": 5,
+      "id": "10"
+    }
+  ]
+}
