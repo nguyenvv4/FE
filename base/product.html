@@ -15,46 +15,36 @@
   </head>
   <body ng-app="myapp">
     <div class="container">
-      <div class="row" ng-controller="productsController">
-        <div class="col-md-4" ng-repeat="sp in products">
+      <div class="row" ng-controller="ProductController">
+        <div class="col-md-3" ng-repeat="pro in products">
           <div class="thumbnail">
-            <img src="{{sp.image}}" alt="Lights" style="width: 100%" />
+            <img src="{{pro.image}}" alt="Lights" style="width: 100%" />
             <div class="caption">
-              <p>mô tả: {{sp.mota}}</p>
-              <p>gia bán: {{sp.giaban}}</p>
+              <p>Mo ta: {{pro.mota}}</p>
+              <p>gia ban: {{pro.giaban}}</p>
             </div>
           </div>
         </div>
       </div>
     </div>
     <script>
-      function productFunc($scope) {
-        var pro = [
+      function showProduct($scope) {
+        var listProduct = [
           {
             image: "Screen Shot 2023-01-04 at 08.47.22.png",
-            mota: "Day la san pham moi nhat",
-            giaban: 100000,
+            mota: "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+            giaban: 10000,
           },
           {
             image: "Screen Shot 2023-01-04 at 08.47.22.png",
-            mota: "Day la san pham moi nhat",
-            giaban: 100000,
-          },
-          {
-            image: "Screen Shot 2023-01-04 at 08.47.22.png",
-            mota: "Day la san pham moi nhat",
-            giaban: 100000,
-          },
-          {
-            image: "Screen Shot 2023-01-04 at 08.47.22.png",
-            mota: "Day la san pham moi nhat",
-            giaban: 100000,
+            mota: "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+            giaban: 10000,
           },
         ];
-        $scope.products = pro;
+        $scope.products = listProduct;
       }
       var app = angular.module("myapp", []);
-      app.controller("productsController", productFunc);
+      app.controller("ProductController", showProduct);
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
