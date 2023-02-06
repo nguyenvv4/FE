@@ -1,0 +1,20 @@
+<div>
+  <table class="table">
+    <tr>
+      <td>id</td>
+      <td>Họ tên</td>
+      <td>Lớp</td>
+    </tr>
+    <tbody ng-repeat="user in sinhviens">
+      <tr>
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.lop}}</td>
+        <td>
+          <button>Sửa</button>
+          <button>Xoá</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
