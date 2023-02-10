@@ -1,0 +1,25 @@
+<div>
+  <table class="table">
+    <tr>
+      <td>id</td>
+      <td>Tên Sản phẩm</td>
+      <td>Giá bán</td>
+      <td>Số lượng tồn</td>
+      <td>Giảm giá</td>
+      <td>Acction</td>
+    </tr>
+    <tbody ng-repeat="sp in sanphams">
+      <tr>
+        <td>{{sp.id}}</td>
+        <td>{{sp.tenSp}}</td>
+        <td>{{sp.giaBan}}</td>
+        <td>{{sp.soLuongTon}}</td>
+        <td>{{sp.giamGia}}</td>
+        <td>
+          <a href="#sanphams/detail/{{sp.id}}">Sua</a>
+          <a href="#">Xoá</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

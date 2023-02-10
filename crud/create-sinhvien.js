@@ -14,7 +14,7 @@ window.CreateSinhVienController = function ($scope, $http, $location) {
         function (response) {
           console.log(response);
           if (response.status === 201) {
-            $location.path("/sinhviens");
+            // $location.path("/home");
             alert("Successful Add");
           }
         },
