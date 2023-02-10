@@ -1,13 +1,6 @@
 {
   "sanphams": [
     {
-      "id": 1,
-      "tenSp": "sp1",
-      "giaBan": 10000,
-      "soLuongTon": 17,
-      "giamGia": 10
-    },
-    {
       "id": 2,
       "tenSp": "sp1",
       "giaBan": 10000,
@@ -55,27 +48,6 @@
       "soLuongTon": "10",
       "giaBan": "10000",
       "giamGia": "20"
-    },
-    {
-      "id": "nflBykk",
-      "tenSp": "",
-      "soLuongTon": "",
-      "giaBan": "",
-      "giamGia": ""
-    },
-    {
-      "id": "iDRBXQc",
-      "tenSp": "",
-      "soLuongTon": "",
-      "giaBan": "",
-      "giamGia": ""
-    },
-    {
-      "id": "1EybM94",
-      "tenSp": "",
-      "soLuongTon": "",
-      "giaBan": "",
-      "giamGia": ""
     }
   ]
 }
