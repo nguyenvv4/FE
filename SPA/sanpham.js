@@ -1,6 +1,5 @@
-window.SanPhamController = function ($scope, $http, $routeParams) {
+window.SanPhamController = function ($scope, $http) {
   $scope.sanphams = [];
-  var id = $routeParams.id;
 
   $http.get("http://localhost:3000/sanphams").then(
     function (response) {
