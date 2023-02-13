@@ -28,7 +28,6 @@ window.SanPhamController = function ($scope, $http) {
         }
       });
   };
-
   $scope.detail = function (id) {
     $http.get("http://localhost:3000/sanphams/" + id).then(
       function (response) {
@@ -36,9 +35,9 @@ window.SanPhamController = function ($scope, $http) {
         if (response.statusText === "OK") {
           $scope.id = response.data.id;
           $scope.tenSp = response.data.tenSp;
+          $scope.soLuongTon = response.data.soLuongTon;
           $scope.giaBan = response.data.giaBan;
           $scope.giamGia = response.data.giamGia;
-          $scope.soLuongTon = response.data.soLuongTon;
         }
       },
       function (errors) {
@@ -57,7 +56,7 @@ window.SanPhamController = function ($scope, $http) {
       })
       .then(function (response) {
         if (response.status === 200) {
-          alert("Sửa sản phẩm thành công");
+          alert("Sua sản phẩm thành công");
         }
       });
   };

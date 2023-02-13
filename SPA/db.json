@@ -5,7 +5,7 @@
       "tenSp": "sp1 DA SỬA",
       "giaBan": "123",
       "soLuongTon": "123",
-      "giamGia": "10000"
+      "giamGia": "9000"
     },
     {
       "id": 3,
@@ -41,6 +41,13 @@
       "giaBan": "123",
       "soLuongTon": "123",
       "giamGia": 10
+    },
+    {
+      "id": "1",
+      "tenSp": "1",
+      "giaBan": "1",
+      "soLuongTon": "1",
+      "giamGia": "1"
     }
   ]
 }
