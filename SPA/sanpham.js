@@ -30,7 +30,7 @@ window.SanPhamController = function ($scope, $http, $routeParams) {
       });
   };
 
-  $scope.update = function (id) {
+  $scope.detail = function (id) {
     $http.get("http://localhost:3000/sanphams/" + id).then(
       function (response) {
         console.log(response);
