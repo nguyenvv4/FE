@@ -2,24 +2,24 @@
   "sanphams": [
     {
       "id": 2,
-      "tenSp": "sp1",
-      "giaBan": 10000,
-      "soLuongTon": 17,
+      "tenSp": "sp1 DA SỬA",
+      "giaBan": "123",
+      "soLuongTon": "123",
       "giamGia": 10
     },
     {
       "id": 3,
       "tenSp": "sp1",
-      "giaBan": 10000,
-      "soLuongTon": 17,
+      "giaBan": "123123",
+      "soLuongTon": "11111",
       "giamGia": 10
     },
     {
-      "id": 4,
       "tenSp": "sp1",
       "giaBan": 10000,
-      "soLuongTon": 17,
-      "giamGia": 10
+      "soLuongTon": "170000",
+      "giamGia": 10,
+      "id": 4
     },
     {
       "id": 5,
@@ -33,35 +33,14 @@
       "tenSp": "sp 6",
       "giaBan": "10000",
       "soLuongTon": "50",
-      "giamGia": "10"
+      "giamGia": "0909"
     },
     {
-      "id": "saW3HBJ",
-      "tenSp": "",
-      "soLuongTon": "",
-      "giaBan": "",
-      "giamGia": ""
-    },
-    {
-      "id": "9",
-      "tenSp": "san pham 1",
-      "soLuongTon": "10",
-      "giaBan": "10000",
-      "giamGia": "20"
-    },
-    {
-      "id": "11",
-      "tenSp": "11",
-      "giaBan": "11",
-      "soLuongTon": "11",
-      "giamGia": "11"
-    },
-    {
-      "id": "12",
-      "tenSp": "12",
-      "giaBan": "12",
-      "soLuongTon": "12",
-      "giamGia": "12"
+      "id": "2 v. dkkdksksksk",
+      "tenSp": "sp1",
+      "giaBan": "123",
+      "soLuongTon": "123",
+      "giamGia": 10
     }
   ]
 }

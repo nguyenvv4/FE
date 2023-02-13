@@ -1,4 +1,4 @@
-window.SanPhamController = function ($scope, $http, $location) {
+window.SanPhamController = function ($scope, $http, $location, $routeParams) {
   $scope.sanphams = [];
 
   $http.get("http://localhost:3000/sanphams").then(
@@ -28,5 +28,31 @@ window.SanPhamController = function ($scope, $http, $location) {
           $location.path("/home");
         }
       });
+    $http
+      .put("http://localhost:3000/sanphams/" + id, {
+        tenSp: $scope.tenSp,
+        giaBan: $scope.giaBan,
+        soLuongTon: $scope.soLuongTon,
+        giamGia: $scope.giamGia,
+      })
+      .then(function (response) {
+        if (response.status === 200) {
+          alert("Sua san pham thanh cong");
+          $location.path("/home");
+        }
+      });
   };
+
+  var id = $routeParams.id;
+  if (id) {
+    $http.get("http://localhost:3000/sanphams/" + id).then(function (response) {
+      if (response.status === 200) {
+        $scope.id = response.data.id;
+        $scope.tenSp = response.data.tenSp;
+        $scope.giaBan = response.data.giaBan;
+        $scope.soLuongTon = response.data.soLuongTon;
+        $scope.giamGia = response.data.giamGia;
+      }
+    });
+  }
 };

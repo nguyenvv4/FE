@@ -1,3 +1,27 @@
+<div class="container">
+  <form method="post">
+    <div class="form-group">
+      <label>id</label>
+      <input class="form-control" id="id" placeholder="id" ng-model="id" />
+      <label>Tên SP</label>
+      <input class="form-control" id="tenSp" ng-model="tenSp" />
+      <label>Giá bán</label>
+      <input class="form-control" id="giaBan" ng-model="giaBan" />
+      <label>Số lượng tồn</label>
+      <input class="form-control" id="soLuongTon" ng-model="soLuongTon" />
+      <label>Giảm giá</label>
+      <input class="form-control" id="giamGia" ng-model="giamGia" />
+    </div>
+
+    <button type="submit" class="btn btn-primary" ng-click="addSanPham()">
+      Add New
+    </button>
+    <button type="submit" class="btn btn-primary" ng-click="updateSanPham()">
+      Update
+    </button>
+  </form>
+</div>
+
 <div>
   <table class="table">
     <tr>
@@ -16,7 +40,8 @@
         <td>{{sp.soLuongTon}}</td>
         <td>{{sp.giamGia}}</td>
         <td>
-          <a href="#sanphams/detail/{{sp.id}}">Sua</a>
+          <button ng-click="update(sp.id)">Sua</button>
+          <a href="#sanphams/detail/{{sp.id}}"></a>
           <a href="#">Xoá</a>
         </td>
       </tr>

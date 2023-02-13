@@ -28,19 +28,19 @@
             templateUrl: "home.html",
             controller: SanPhamController,
           })
-          .when("/sanphams/add-new", {
-            templateUrl: "create.html",
-            controller: SanPhamController,
-          })
-          // .when("/sanphams/detail", {
-          // templateUrl: "create.html",
-          //   controller: SinhVienDetailController,
+          // .when("/sanphams/add-new", {
+          //   templateUrl: "create.html",
+          //   controller: SanPhamController,
+          // })
+          // .when("/sanphams/detail/:id", {
+          //   templateUrl: "create.html",
+          //   controller: SanPhamController,
           // })
           .otherwise({
             redirectTo: "/home",
           });
       });
     </script>
-    <script src="./sanpham2.js"></script>
+    <script src="./sanpham.js"></script>
   </body>
 </html>
