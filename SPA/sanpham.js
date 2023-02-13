@@ -60,4 +60,16 @@ window.SanPhamController = function ($scope, $http) {
         }
       });
   };
+  $scope.delete = function (id) {
+    $http.delete("http://localhost:3000/sanphams/" + id).then(
+      function (response) {
+        if (response.status === 200) {
+          alert("xoa thanh cong");
+        }
+      },
+      function (errors) {
+        console.log(errors);
+      }
+    );
+  };
 };
