@@ -1,0 +1,54 @@
+<div class="container">
+  <h3 style="text-align: center">Home Page</h3>
+  <form>
+    <div class="mb-3 row">
+      <div class="mb-3 row">
+        <label class="col-sm-2 col-form-label">ID</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="id" ng-model="id" />
+        </div>
+        <label class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="name" ng-model="name" />
+        </div>
+        <label class="col-sm-2 col-form-label">Price</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="price" ng-model="price" />
+        </div>
+        <label class="col-sm-2 col-form-label">Color</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="color" ng-model="color" />
+        </div>
+        <label class="col-sm-2 col-form-label">Type</label>
+        <div class="col-sm-10">
+          <!-- <input type="text" class="form-control" id="type" ng-model="type" /> -->
+          <select name="" id="" disabled="disabled"></select>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" ng-click="addNew()">ADD</button>
+    <button class="btn btn-primary" ng-click="update()">UPDATE</button>
+  </form>
+  <table class="table">
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Price</td>
+        <td>Color</td>
+        <td>Type</td>
+      </tr>
+    </thead>
+    <tbody ng-repeat="xm in xemays">
+      <td>{{xm.id}}</td>
+      <td>{{xm.name}}</td>
+      <td>{{xm.price}}</td>
+      <td>{{xm.color}}</td>
+      <td>{{xm.type}}</td>
+      <td>
+        <button class="btn btn-info" ng-click="detail(xm.id)">Chi tiet</button>
+        <button class="btn btn-info">Xoa</button>
+      </td>
+    </tbody>
+  </table>
+</div>

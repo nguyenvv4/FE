@@ -1,0 +1,46 @@
+{
+  "xemay": [
+    {
+      "id": 1,
+      "name": "xe 1",
+      "price": 10000,
+      "color": "black",
+      "type": "currency"
+    },
+    {
+      "id": 2,
+      "name": "xe 1",
+      "price": 10000,
+      "color": "black",
+      "type": "currency"
+    },
+    {
+      "id": 3,
+      "name": "xe 1",
+      "price": 10000,
+      "color": "black",
+      "type": "currency"
+    },
+    {
+      "id": "4",
+      "name": "4",
+      "price": "4",
+      "color": "4",
+      "type": "4"
+    },
+    {
+      "id": "8xKRHHY"
+    },
+    {
+      "id": "SD2TpEm"
+    },
+    {
+      "id": "-K5WNN2",
+      "name": ""
+    },
+    {
+      "id": "0-j0KuX",
+      "name": ""
+    }
+  ]
+}
