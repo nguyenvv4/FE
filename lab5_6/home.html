@@ -43,15 +43,15 @@
         <td>Type</td>
       </tr>
     </thead>
-    <tbody ng-repeat="xm in xemays">
-      <td>{{xm.id}}</td>
-      <td>{{xm.name}}</td>
-      <td>{{xm.price}}</td>
-      <td>{{xm.color}}</td>
-      <td>{{xm.type}}</td>
+    <tbody ng-repeat="ao in aos">
+      <td>{{ao.id}}</td>
+      <td>{{ao.name}}</td>
+      <td>{{ao.price}}</td>
+      <td>{{ao.color}}</td>
+      <td>{{ao.type}}</td>
       <td>
-        <button class="btn btn-info" ng-click="detail(xm.id)">Chi tiet</button>
-        <button class="btn btn-info" ng-click="delete(xm.id)">Xoa</button>
+        <button class="btn btn-info" ng-click="detail(ao.id)">Chi tiet</button>
+        <button class="btn btn-info" ng-click="delete(ao.id)">Xoa</button>
       </td>
     </tbody>
   </table>

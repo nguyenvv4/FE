@@ -1,17 +1,17 @@
-window.XeMayController = function ($scope, $http) {
-  $scope.xemays = [];
-  $http.get("http://localhost:3000/xemay").then(function (response) {
+window.AoController = function ($scope, $http) {
+  $scope.aos = [];
+  $http.get("http://localhost:3000/ao").then(function (response) {
     if (response.status === 200) {
-      $scope.xemays = response.data;
+      $scope.aos = response.data;
     }
   });
 
   $scope.update = function () {
-    $http.get("http://localhost:3000/xemay/" + $scope.id).then(
+    $http.get("http://localhost:3000/ao/" + $scope.id).then(
       function (response) {
         if (response.status === 200) {
           $http
-            .put("http://localhost:3000/xemay/" + $scope.id, {
+            .put("http://localhost:3000/ao/" + $scope.id, {
               name: $scope.name,
               price: $scope.price,
               color: $scope.color,
@@ -31,7 +31,7 @@ window.XeMayController = function ($scope, $http) {
   };
 
   $scope.detail = function (id) {
-    $http.get("http://localhost:3000/xemay/" + id).then(function (response) {
+    $http.get("http://localhost:3000/ao/" + id).then(function (response) {
       if (response.status === 200) {
         $scope.id = response.data.id;
         $scope.name = response.data.name;
@@ -43,30 +43,25 @@ window.XeMayController = function ($scope, $http) {
   };
 
   $scope.delete = function (id) {
-    $http.delete("http://localhost:3000/xemay/" + id).then(function (response) {
+    $http.delete("http://localhost:3000/ao/" + id).then(function (response) {
       if (response.status === 200) {
         alert("Xoa thanh cong");
       }
     });
   };
   $scope.addNew = function () {
-    var id = $scope.id;
-    if (id === undefined || id === null || id === "") {
-      alert("sai");
-    } else {
-      $http
-        .post("http://localhost:3000/xemay", {
-          id: $scope.id,
-          name: $scope.name,
-          price: $scope.price,
-          color: $scope.color,
-          type: $scope.type,
-        })
-        .then(function (response) {
-          if (response.status === 201) {
-            alert("Them thanh cong");
-          }
-        });
-    }
+    $http
+      .post("http://localhost:3000/ao", {
+        id: $scope.id,
+        name: $scope.name,
+        price: $scope.price,
+        color: $scope.color,
+        type: $scope.type,
+      })
+      .then(function (response) {
+        if (response.status === 201) {
+          alert("Them thanh cong");
+        }
+      });
   };
 };
